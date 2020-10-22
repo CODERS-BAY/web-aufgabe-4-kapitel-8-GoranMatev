@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html leng="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="widht=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Zoo und seine Bewohner Kontakt</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./info.html">Infos</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <h1 style="text-align: center;">Deine Meinung ist uns wichtig!</h1>
+        <article>
+            <form method="POST" action="">
+                <label>Dein Name</label>
+                <input type="text" name="name" required />
+                <label>Deine e-Mail Adresse</label>
+                <input type="email" name="email" required />
+                <label>Besuchstag</label>
+                <input type="date" name="besuchertag" />
+                <label>Besuchszeit</label>
+                <input type="time" name="besuchszeit" />
+                <label>Hat es dir gefallen?</label>
+                <input type="range" name="like" />
+                <label>Weiterempfehlung</label>
+                <input type="checkbox" /> Ja/Nein
+                <label>Welche Tierart hat Dir am besten gefallen?</label>
+                <input list="Tiere" name="tiere">
+                <datalist id="Tiere">
+                    <option value="Tieger">
+                    <option value="Elefant">
+                    <option value="Nashorn">
+                </datalist>
+                <label>Kommentar</label>
+                <textarea id="nachricht" rows="20" cols="40">
+                </textarea>
+                <label>Besucherinfo</label>
+                <select id="besucherinfo">
+                    <option value="1">Familienausflug</option>
+                    <option value="2">Allein unterwegs</option>
+                    <option value="3">Gruppenausflug</option>
+                    <option value="4">Ausflug mit Freunden</option>
+                    <option value="5">was anderes</option>
+                </select>
+                <button type="submit" id="submit">senden</button>
+                <button type="reset" id="reset">löschen</button>
+            </form>
+        </article>
+        <footer>copyright by comic sans ms</footer>
+    </body>
+</html>
